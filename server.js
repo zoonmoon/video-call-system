@@ -33,7 +33,7 @@ dbc.connect(function(err){
 		//console.log('connected to database');
 	}
 	else{
-		//console.log(err);
+		console.log(err);
 	}
 })
 
@@ -158,3 +158,4 @@ const port = 3000;
 
 
 io.listen(port);
+
