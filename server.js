@@ -21,10 +21,10 @@ var mysql = require('mysql');
 var connected =false;
 
 var dbc = mysql.createConnection({
-  host: "db4free.net",
-  user: "itsvidtime",
-  password: "Fawcdtgk789!",
-  database: "itsvidtime"
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 });
 
 
@@ -155,5 +155,6 @@ io.on("connection", (socket) => {
 
 // port while running program in local machine
 const port = 3000;
+
 
 io.listen(port);
