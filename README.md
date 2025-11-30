@@ -1,1 +1,1 @@
-Omegle Clone that allows video call between two strangers
+Application that allows video call between two strangers
